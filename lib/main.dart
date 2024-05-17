@@ -13,22 +13,37 @@ class MyApp extends StatelessWidget {
           width: double.infinity,
           height: double.infinity,
           color: Color.fromRGBO(115, 200, 10, 1),
-          child: Column(
-            children: [
-              Flexible(
-                  child: Container(
-                    color: Colors.red,
-                  ),
+          child: Row(
+          children: [
+            Flexible(
+              child: Container(
+                color: Colors.red,
               ),
-              Flexible(
-                  child: Container(
-                    color: Colors.yellow,
-                  ),
-              ),
-            ],
-          )
-        ),
+            ),
+            Flexible(
+              child: Container(
+                child: Column(
+                  children: [
+                    Flexible(
+                      child: Container(
+                        color: Colors.orange,
+                      ),
+                    ),
+                    Flexible(
+                      child: Container(
+                        color: Colors.blue,
+                      ),
+                    ),
+              ],
+            ),
+
+            ),
+          ),
+        ],
+        )
+
       ),
+    ),
     );
   }
   const MyApp({super.key});

@@ -30,8 +30,14 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     Flexible(
-                      child: Container(
-                        color: Colors.blue,
+                      child: Column(
+                        children: [
+                          Text('Hello from me!',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.black87,
+                          ),)
+                        ],
                       ),
                     ),
               ],
